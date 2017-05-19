@@ -21,5 +21,8 @@ module GoToWebinar
       self.class.get("/webinars")
     end
 
+    def get_webinars_for(account_key)
+      self.class.get("/accounts/#{account_key}/webinars")
+    end
   end
 end
